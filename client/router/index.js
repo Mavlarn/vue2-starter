@@ -6,7 +6,7 @@ import routes from './routes'
 
 Vue.use(Router)
 
-let router = new Router({
+const router = new Router({
   mode: 'hash',
   routes
 })

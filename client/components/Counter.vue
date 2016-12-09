@@ -11,18 +11,17 @@
 </template>
 
 <script>
-
 import API from '../api'
 
 export default {
   computed: {
-    count() {
+    count () {
       return this.$store.state.count
     }
   },
   methods: {
-    getIndexData(){
-      API.indexPage.get({id: 1}).then( (res) => {
+    getIndexData () {
+      API.indexPage.get({ id: 1 }).then(res => {
         console.info(res)
       }, (err) => {
         console.warn(err)

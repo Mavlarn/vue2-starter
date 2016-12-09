@@ -10,7 +10,7 @@
 export default {
   props: ['title', 'text'],
   computed: {
-    count() {
+    count () {
       return this.$store.state.count
     }
   }

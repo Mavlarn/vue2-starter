@@ -9,17 +9,17 @@ Vue.http.interceptors.push((request, next) => {
   Indicator.open()
   next((response) => {
     console.log(`request done, ${response.status}`)
-    setTimeout(()=>{
+    setTimeout(() => {
       Indicator.close()
     }, 1000)
 
-    if(response.ok){
+    if (response.ok) {
       console.log(`success handler`)
-    }else{
+    } else {
       console.warn(`error handler`)
     }
 
     return response // to success callback or error callback
-  });
-});
+  })
+})
 

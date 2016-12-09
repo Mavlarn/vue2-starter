@@ -4,10 +4,10 @@
 import Vue from 'vue'
 import VueResource from 'vue-resource'
 
-Vue.use(VueResource);
+Vue.use(VueResource)
 
 const resources = {
-  indexPage: Vue.resource('someitem{/id}'),
+  indexPage: Vue.resource('someitem{/id}')
 }
 
 export default resources

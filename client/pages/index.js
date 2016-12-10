@@ -1,9 +1,9 @@
-import Root from './Root'
+import AbstractApp from './AbstractApp.vue'
 import Home from './Home'
-import User from './User'
+import Profile from './account/Profile.vue'
 
 export {
-  Root,
+  AbstractApp,
   Home,
-  User
+  Profile
 }

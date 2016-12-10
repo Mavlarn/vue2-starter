@@ -1,13 +1,13 @@
 import Vue from 'vue'
-import Router from 'vue-router'
+import VueRouter from 'vue-router'
 
 import hooks from './hooks'
 import routes from './routes'
 
-Vue.use(Router)
+Vue.use(VueRouter)
 
-const router = new Router({
-  mode: 'hash',
+const router = new VueRouter({
+  mode: 'history',
   routes
 })
 

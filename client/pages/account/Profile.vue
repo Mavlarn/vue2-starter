@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { List } from '../components'
+import { List } from '../../components'
 
 export default {
   components: {

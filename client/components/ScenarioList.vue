@@ -1,15 +1,25 @@
 <template>
 
-  <h2>Scenario Detail</h2>
+  <mt-loadmore :top-method="refresh" :bottom-method="loadMore" :bottom-all-loaded="allLoaded" ref="loadmore">
+    <ul>
+      <li v-for="item in list">
+        {{ item.innerName }} - {{item.showDate}}
+        <button
+          @click="addToDetail(p)">
+          去购买
+        </button>
+      </li>
+    </ul>
+  </mt-loadmore>
 
 </template>
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
 export default {
-  name: 'scenarioDetail',
+  name: 'scenarioList',
   computed: mapGetters({
-    scenario: 'selectedScenario'
+    list: 'scenarioList'
   }),
   methods: {
     refresh (id) {

@@ -1,9 +1,7 @@
 
 const state = {
   count: 0,
-  account: null,
-  scenarioList: [],
-  selectedScenario: null
+  account: null
 }
 
 export default state

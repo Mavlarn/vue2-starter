@@ -22,8 +22,7 @@ const config = {
         } else {
           console.warn(`error handler ` + new Date())
         }
-
-        return response // to success callback or error callback
+        // return response.body // return content.
       })
     })
   }

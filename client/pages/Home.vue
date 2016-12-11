@@ -1,18 +1,26 @@
 <template>
-  <div class="page">
-    <counter></counter>
-    <p>
-      To get started, edit files in <code>./client</code> and save.
-    </p>
+  <div class="home">
+    <img src="../assets/logo.png">
+    <p>{{ msg }}</p>
+    <h3>标题</h3>
+    <div>
+      <ScenarioSearch></ScenarioSearch>
+    </div>
   </div>
 </template>
 
 <script>
-import { Counter } from '../components'
+import { ScenarioSearch } from '../components'
 
 export default {
+  name: 'home',
   components: {
-    Counter
+    ScenarioSearch
+  },
+  data () {
+    return {
+      msg: '首发、零元抽、一元抢、二手票、尾票...'
+    }
   }
 }
 </script>

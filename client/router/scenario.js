@@ -1,10 +1,10 @@
 
-import { ScenarioList } from '../pages/scenario/ScenarioList'
-import { ScenarioDetail } from '../pages/scenario/ScenarioDetail'
+import ScenarioList from '../pages/scenario/ScenarioList'
+import ScenarioDetail from '../pages/scenario/ScenarioDetail'
 
 const scenarioRoutes = [
-  { path: '/app/scenarios', component: ScenarioList },
-  { path: '/app/scenarios/:id', component: ScenarioDetail }
+  { path: 'scenarios/:id', component: ScenarioDetail },
+  { path: 'scenarios', component: ScenarioList }
 ]
 
 export default scenarioRoutes

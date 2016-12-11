@@ -1,26 +1,10 @@
-# vue-xpack-starter
-A vue webpack starter.
-It has: Vue / Vuex / Vue-router / Vue-resource / Mint-UI / Webpack / ES6 / PostCSS + Stylus
-> enjoy
-
-## usage
-
-```bash
-# start
-$ npm i
-# develop
-$ npm run dev
-# for production
-$ npm run build
-```
-
-## some links for project
-1. vue:
-  * https://cn.vuejs.org/v2/guide
-  * https://github.com/vuejs
-2. vue-router: http://router.vuejs.org
-3. vue-resource: https://github.com/pagekit/vue-resource
-4. stylus: http://stylus-lang.com
-5. mint-ui: http://mint-ui.github.io
-
-
+# vue2-starter
+A vue2 webpack starter. Include:
+ * Vue2
+ * Vuex, modularized stores.
+ * vur-router, routes with module, with global data prefetch sample, beforeEnter sample.
+ * vue-rource, with customer actions.
+ * mint-ui
+ * ESLint check, editor config.
+ * and other...
+ 

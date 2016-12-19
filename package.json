@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "hunt tickets weixin version2.",
   "scripts": {
-    "dev": "node build/dev-server.js",
+    "dev": "webpack-dashboard -- node build/dev-server.js",
     "build": "node build/build.js",
     "unit": "karma start test/unit/karma.conf.js --single-run",
     "test": "npm run unit",
@@ -18,7 +18,8 @@
     "vue-resource": "^1.0.3",
     "vue-router": "^2.0.0",
     "vuex": "^2.0.0",
-    "vuex-router-sync": "^3.0.0"
+    "vuex-router-sync": "^3.0.0",
+    "moment": "^2.17.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
@@ -74,6 +75,7 @@
     "vue-style-loader": "^1.0.0",
     "vue-template-compiler": "^2.1.0",
     "webpack": "^1.13.2",
+    "webpack-dashboard": "^0.2.0",
     "webpack-dev-middleware": "^1.8.3",
     "webpack-hot-middleware": "^2.12.2",
     "webpack-merge": "^0.14.1"

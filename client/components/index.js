@@ -1,9 +1,9 @@
 import Counter from './Counter'
 import List from './List'
-import ScenarioSearch from './ScenarioSearch'
+import FixedButton from './FixedButton'
 
 export {
   Counter,
   List,
-  ScenarioSearch
+  FixedButton
 }

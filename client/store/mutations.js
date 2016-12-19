@@ -1,9 +1,14 @@
+import * as types from './types'
+
 const mutations = {
-  INCREMENT (state) {
-    state.count++
+  [types.SET_SELECTED_TAB] (state, tabId) {
+    state.selectedTab = tabId
   },
-  DECREMENT (state) {
-    state.count--
+  [types.SET_HAS_TAB] (state, hasTabs = true) {
+    state.hasTabs = hasTabs
+  },
+  [types.SET_SYS_CONFIG] (state, config) {
+    state.sysConfig = config
   }
 }
 

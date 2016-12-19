@@ -6,13 +6,22 @@ import { sync } from 'vuex-router-sync'
 import VueResource from 'vue-resource'
 Vue.use(VueResource)
 
+import './constants'
+import './directives'
+import './filters'
+
 import router from './router'
 import store from './store'
 
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
-Vue.use(MintUI)
 
+import './assets/main.styl'
+
+import configurations from './api/configurations'
+configurations.configLoading()
+
+Vue.use(MintUI)
 sync(store, router)
 
 var Root = Vue.extend({

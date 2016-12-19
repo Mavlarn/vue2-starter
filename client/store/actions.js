@@ -1,8 +1,11 @@
+import API from '../api'
+import * as types from './types'
+
 const actions = {
-  incrementAsync ({ commit }) {
-    setTimeout(() => {
-      commit('INCREMENT')
-    }, 200)
+  [types.DO_GET_SYS_CONFIG] ({ commit }) {
+    API.SysConfig.get().then(() => {
+      commit(types.SET_SYS_CONFIG)
+    })
   }
 }
 

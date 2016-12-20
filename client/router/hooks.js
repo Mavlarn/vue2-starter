@@ -17,6 +17,9 @@ const hooks = (router) => {
     } else {
       router.app.$store.commit(types.SET_HAS_TAB, null, false)
     }
+    // if (to.matched.some(record => record.meta.title)) {
+    router.app.$store.commit(types.SET_TITLE, to.meta.title)
+    // }
 
     if (to.matched.some(record => record.meta.role) && !checkUserLoggedIn()) {
       Toast({ message: '请先登陆', position: 'bottom' })

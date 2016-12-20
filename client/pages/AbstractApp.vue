@@ -1,22 +1,22 @@
 <template>
   <div id="abs-root">
     <mt-header v-bind:title="title">
-      <mt-button icon="back" slot="left" @click="$router.go(-1)">返回</mt-button>
+      <!--<mt-button icon="back" slot="left" @click="$router.go(-1)">返回</mt-button>-->
     </mt-header>
 
     <router-view></router-view>
 
     <mt-tabbar v-model="selectedTab" v-if="hasTabs">
       <mt-tab-item id="home" @click.native="selectTab('home')">
-        <i slot="icon" class="icon iconfont icon-lg icon-shouye"></i>
+        <i slot="icon" class="fa fa-fw fa-lg fa-home"></i>
         首页
       </mt-tab-item>
       <mt-tab-item id="activities" @click.native="selectTab('activities')">
-        <i slot="icon" class="icon iconfont icon-lg icon-huodong"></i>
+        <i slot="icon" class="fa fa-fw fa-lg fa-list"></i>
         活动
       </mt-tab-item>
       <mt-tab-item id="account" @click.native="selectTab('account')">
-        <i slot="icon" class="icon iconfont icon-lg icon-20151209tubiaolianxizhuanhuan13"></i>
+        <i slot="icon" class="fa fa-fw fa-lg fa-user"></i>
         我的
       </mt-tab-item>
     </mt-tabbar>
@@ -43,6 +43,7 @@ export default {
     }
   },
   computed: mapGetters({
+    title: 'title',
     selectedTab: 'selectedTab',
     hasTabs: 'hasTabs'
   }),

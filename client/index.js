@@ -15,6 +15,7 @@ import store from './store'
 
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
+import 'font-awesome/css/font-awesome.css'
 
 import './assets/main.styl'
 

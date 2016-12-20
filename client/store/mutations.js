@@ -1,6 +1,9 @@
 import * as types from './types'
 
 const mutations = {
+  [types.SET_TITLE] (state, title) {
+    state.title = title
+  },
   [types.SET_SELECTED_TAB] (state, tabId) {
     state.selectedTab = tabId
   },

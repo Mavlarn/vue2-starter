@@ -2,6 +2,7 @@
 // -- actions
 export const DO_GET_SYS_CONFIG = 'DO_GET_SYS_CONFIG'
 // -- mutations
+export const SET_TITLE = 'SET_TITLE'
 export const SET_SELECTED_TAB = 'SET_SELECTED_TAB'
 export const SET_HAS_TAB = 'SET_HAS_TAB'
 export const SET_SYS_CONFIG = 'SET_SYS_CONFIG'
